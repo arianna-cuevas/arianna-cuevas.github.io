@@ -1,0 +1,94 @@
+body{
+     background-image: url("graphics/bkg3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    padding: 20px;
+    margin-left: 400px;
+    margin-top: 20px;
+    width: 800px;
+    height: 250px;
+    font-family: 'Cormorant Garamond';font-size: 25px;
+
+
+}
+
+h1{
+  font-family: "Lucida Handwriting", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-indent: 30px;
+  font-size: 60px;
+  margin-left: 500px;
+}
+    
+h5{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 600px;
+}
+h4{
+    font-family: "Nosifer";
+    font-size: 40px;
+    color: #D42502;
+    margin-left: 100px;
+    margin-top: 1400px;
+}
+
+.photo1 {
+    position: absolute;
+    top: 200px;
+    left: 700px;
+}
+   
+ .photo2 {
+    position: absolute;
+
+    top: 100px;
+    left: -350px;
+}
+.photo3 {
+    position: absolute;
+
+    top: -20px;
+    left: 1000px;
+}  
+.photo4 {
+    position: absolute;
+
+    top: 500px;
+    left: 400px;
+}
+.photo5 {
+    position: absolute;
+
+    top: 1400px;
+    left: 800px;
+}
+.photo6 {
+    position: absolute;
+
+    top: 1200px;
+    left: 200px;
+}
+.photo7 {
+     position: absolute;
+
+    top: 800px;
+    left: -200px;
+}
+
+.twine-link {
+    position: absolute;
+    top:200px;
+    left: 300px;
+    margin-top: -100px;
+    margin-left: -200px;
+    font-size: 30px;
+}
