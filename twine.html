@@ -44,7 +44,8 @@
 
 </tw-passagedata><tw-passagedata pid="8" name="Untitled Passage" tags="" position="775,525" size="100,100"></tw-passagedata><tw-passagedata pid="9" name="seven" tags="" position="475,1150" size="100,100">Things in my house!!
 
-&lt;img src=&quot;https://arianna-cuevas.github.io/AriannaBioLayout.png&quot; style=&quot;width:100%&quot;&gt;</tw-passagedata><tw-passagedata pid="10" name="6. I hope I don&#39;t wake up before then." tags="" position="600,1150" size="100,100"></tw-passagedata><tw-passagedata pid="11" name="object assignment" tags="" position="725,400" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/falltree.png&quot;&gt;</tw-passagedata><tw-passagedata pid="12" name="haunted house" tags="" position="400,375" size="100,100">A Home That Was Once Haunted
+&lt;img src=&quot;https://arianna-cuevas.github.io/AriannaBioLayout.png&quot; style=&quot;width:100%&quot;&gt;</tw-passagedata><tw-passagedata pid="10" name="6. I hope I don&#39;t wake up before then." tags="" position="600,1150" size="100,100"></tw-passagedata><tw-passagedata pid="11" name="object assignment" tags="" position="725,400" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/falltree.png&quot;&gt;</tw-passagedata><tw-passagedata pid="12" name="haunted house" tags="" position="400,375" size="100,100">
+A Home That Was Once Haunted
 
 Welcome Home. 
 
@@ -54,7 +55,7 @@ You must find your way to your room, but not until everything in the house and i
 
 [[Begin your journey|entrance]] ... at your own risk. Good luck!
 
-&lt;img src=&quot;https://arianna-cuevas.github.io/hauntedkey.png&quot; width=&quot;600&quot;&gt;
+&lt;img src=&quot;https://arianna-cuevas.github.io/hauntedkey.png&quot; width=&quot;700&quot;&gt;
 
 &lt;button onclick=&quot;new Audio (&#39;https://arianna-cuevas.github.io/tensionbuild.mp3&#39;).play()&quot;&gt;♱&lt;/button&gt;
 
@@ -65,33 +66,53 @@ The smell of decay and pinewood are pungent around these parts. You hate walking
 Once you get close, you pause for a moment. You know what you will find in that house can&#39;t be good, you just have a feeling. But it&#39;s time to get to work.
 
 Now [[approach the house.|doorway]] Good luck!</tw-passagedata><tw-passagedata pid="14" name="doorway" tags="" position="400,625" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/haunteddoor.png&quot; width=&quot;700&quot;&gt;
+
 Thump-thump, thump-thump.
 
-The sound of your own heart beat is deafening as you approach the portal to the bleak reality of a junior in college. Your anxiety is running rampant, you are even having trouble remembering where your key is. The door is usually unlocked, though.
+The sound of your own heart beat is deafening as you approach the portal to the bleak reality of a junior in college. Your anxiety is running rampant, you are even having trouble remembering where your key is. The door is usually unlocked, though. 
 
-Should you:
+Moreover, as soon as you approached the door, you remembered everything you have to do [[before tomorrow|ToDoList]]. And the list is endless.
 
-[[Open the door and risk it being locked.|living room]]
-
-Or
+Let&#39;s start cutting that list down.
 
 [[Look for the key|key]]
 
 
 </tw-passagedata><tw-passagedata pid="15" name="living room" tags="" position="400,750" size="100,100">
-You made it inside!! The door was unlocked the whole time, phew.
+You found the key and made it inside!! 
+(set: $foundKey to true)
+[[Now you can check one thing off of your to do list!|ToDoList]]
 
 It&#39;s pretty dark in here. You figured it would be scary in here, but not this empty. You are still afraid and can hear the thump-thump of your heartbeat growing with each passing second you spend in the dark. 
 
 [[Turn on the lights and see what lies in the foyer.|foyer monster]]
 
-Or
-
-[[See what&#39;s going on in the kitchen|kitchen]]
-
 Or 
 
-[[Leave the house|locked]] </tw-passagedata><tw-passagedata pid="16" name="foyer monster" tags="" position="400,875" size="100,100"></tw-passagedata><tw-passagedata pid="17" name="kitchen" tags="" position="275,875" size="100,100"></tw-passagedata><tw-passagedata pid="18" name="locked" tags="" position="400,1000" size="100,100"></tw-passagedata><tw-passagedata pid="19" name="key" tags="" position="275,625" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/porch.png&quot; width=&quot;700&quot;&gt;
+&lt;s&gt;Leave the house&lt;/s&gt;</tw-passagedata><tw-passagedata pid="16" name="foyer monster" tags="" position="400,875" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/livingroom.png&quot; width=&quot;700&quot;&gt;
+
+Oh no! It&#39;s one of your roommates in the filthy living room. You could have sworn that living room was clean before you left. Your roommate is busy on the couch rotting, no way they will clean the living room. This is another opportunity to start doing something productive for the house. But then again, you do have a lot of homework and studying to get to...
+
+Should you:
+
+[[Dust the living room|clean living room]]
+
+Or
+
+[[Keep going into the kitchen|kitchen]]</tw-passagedata><tw-passagedata pid="17" name="kitchen" tags="" position="275,875" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/kitchen.png&quot; width=&quot;700&quot;&gt;
+
+Oh no! This kitchen is worse than I thought... this is going to take forever to get cleaned. How much of these dishes are mine, you wonder cautiously. You try to recall if you washed those dishes from the last few days before you left, but you were in such a hurry. It&#39;s impossible to remember. 
+
+Then you hear a  &lt;button onclick=&quot;new Audio (&#39;https://arianna-cuevas.github.io/creakyfloor.wav&#39;).play()&quot;&gt;creak&lt;/button&gt; behind you. Oh, no. Could it be one of your roommates?
+
+Your roommate is not happy with you. You left some dishes in the sink, and even though the dish pileup isn&#39;t all yours, it&#39;s imperative that you clean your dishes now and put the rest in the dishwasher so that your roommate calms down. 
+
+Should you [[clean the kitchen?|clean kitchen]]
+
+Or
+
+Move on to the [[hallway,|hallway]] you have work to do.
+</tw-passagedata><tw-passagedata pid="18" name="key" tags="" position="275,625" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/porch.png&quot; width=&quot;700&quot;&gt;
 You decide to save yourself some embarrassment by trying to find a key, just in case the door is open and everyone is home. There should be a spare key next to the porch chair, but it could also be under the doormat.
 
 Should you look:
@@ -100,13 +121,129 @@ Should you look:
 
 or
 
-[[next to the chair|chair]]</tw-passagedata><tw-passagedata pid="20" name="doormat" tags="" position="275,750" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/doormat.png&quot; width=&quot;700&quot;&gt;
+[[next to the chair|chair]]</tw-passagedata><tw-passagedata pid="19" name="doormat" tags="" position="275,750" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/doormat.png&quot; width=&quot;700&quot;&gt;
 
-[[Look under the doormat|living room]] to see if the key is there!</tw-passagedata><tw-passagedata pid="21" name="chair" tags="" position="150,750" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/rockingchair.png&quot; width=&quot;700&quot;&gt;
+[[Look under the doormat|living room]] to see if the key is there!
 
-[[Look next to the chair|no key]] to see if it&#39;s there!</tw-passagedata><tw-passagedata pid="22" name="no key" tags="" position="150,875" size="100,100">No key!!
+</tw-passagedata><tw-passagedata pid="20" name="chair" tags="" position="150,750" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/rockingchair.png&quot; width=&quot;700&quot;&gt;
 
-[[Look under the doormat|doormat]]</tw-passagedata></tw-storydata>
+[[Look next to the chair|no key]] to see if it&#39;s there!</tw-passagedata><tw-passagedata pid="21" name="no key" tags="" position="150,875" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/xmark.png&quot; width=&quot;700&quot;&gt;
+No key!!
+
+[[Look under the doormat|doormat]]</tw-passagedata><tw-passagedata pid="22" name="StoryInit" tags="" position="250,400" size="100,100">(set: $foundKey to false)
+(set: $livingRoomDusted to false)
+(set: $dishesClean to false)
+(set: $dishwasherRan to false)
+(set: $dishesAway to false)
+(set: $checkedMirror to false)
+(set: $bathroomCleaned to false)
+(set: $essayWritten to false)
+(set: $finalExamStudied to false)
+(set: $videoMade to false)
+(set: $summerInternshipsApplied to false)
+(set: $hirevueDone to false)
+(set: $rentPaid to false)
+(set: $waterBillPaid to false)
+(set: $toiletPaperPurchased to false)
+(set: $roommatesAvoided to false)
+(set: $foundPeace to false)</tw-passagedata><tw-passagedata pid="23" name="ToDoList" tags="" position="250,500" size="100,100">|todo&gt;[TO DO LIST]
+
+(if: $foundKey is true)[✓ Find the missing key]
+(else:)[☐ Find the missing key]
+(if: $livingRoomDusted is true)[✓ Dust the living room]
+(else:)[☐ Dust the living room]
+(if: $dishesClean is true)[✓ Clean your dishes]
+(else:)[☐ Clean your dishes]
+(if: $dishwasherRan is true)[✓ Run the dishwasher]
+(else:)[☐ Run the dishwasher]
+(if: $dishesAway is true)[✓  Put dishes away]
+(else:)[☐ Put dishes away]
+(if: $checkedMirror is true)[✓ Check the mirror]
+(else:)[☐ Check the mirror]
+(if: $essayWritten is true)[✓ Write 10-page essay]
+(else:)[☐ Write 10-page essay]
+(if: $finalExamStudied is true)[✓ Study for final exam (worth 30% of your grade)]
+(else:)[☐ Study for final exam (worth 30% of your grade)]
+(if: $videoMade is true)[✓ Make a video for class tomorrow]
+(else:)[☐ Make a video for class tomorrow]
+(if: $emailChecked is true)[✓ Check email]
+(else:)[☐ Check email]
+(if: $summerInternshipsApplied is true)[✓ Apply for 30 summer internships]
+(else:)[☐ Apply for 30 summer internships]
+(if: $rentPaid is true)[✓ Pay rent]
+(else:)[☐ Pay rent]
+(if: $roommatesAvoided is true)[✓ Avoid having fun with roommates until all is done]
+(else:)[☐ Avoid having fun with roommates until all is done]
+(if: $foundPeace is true)[✓ Find little bit of peace for the night (before the horrors return tomorrow before class)]
+(else:)[☐ Find little bit of peace for the night (before the horrors return tomorrow before class)]
+
+
+</tw-passagedata><tw-passagedata pid="24" name="clean living room" tags="" position="275,1125" size="100,100">(set: $foundKey to true)
+(set: $livingRoomDusted to true)
+
+[insert image]
+
+You completed another task on your [[to-do list!|ToDoList]] And now the living room is spotless, congratulations! 
+
+[[Move on to the kitchen|kitchen]]
+
+Or
+
+[[Go to the hallway|hallway]]
+
+</tw-passagedata><tw-passagedata pid="25" name="hallway" tags="" position="275,1250" size="100,100">[insert image]
+
+You think about what to check off of your list first. You know you have a pile of homework to do before your finals start next week, but you would rather unpack your bags from vacation. It requires way less brain power. There&#39;s also the matter of feeding yourself and taking care of your body first. 
+
+But first, you need to use the bathroom. You had a long traveling day and haven&#39;t been to the bathroom since the rest stop your family went to over 4 hours ago. So you head upstairs to the [[bathroom.|bathroom]]
+
+
+</tw-passagedata><tw-passagedata pid="26" name="clean kitchen" tags="" position="150,1175" size="100,100">(set: $foundKey to true)
+(set: $livingRoomDusted to true)
+(set: $dishesClean to true)
+(set: $dishwasherRan to true)
+(set: $dishesAway to true)
+[insert image]
+
+The kitchen is clean and your roommate is happy again! And now you can check a few things off of your [[to-do list!|ToDoList]]
+
+Okay, now it&#39;s time to go upstairs and get settled for the night, so you make your way [[through the hallway.|hallway]]
+</tw-passagedata><tw-passagedata pid="27" name="bathroom" tags="" position="275,1375" size="100,100">(set: $foundKey to true)
+(set: $livingRoomDusted to true)
+(set: $dishesClean to true)
+(set: $dishwasherRan to true)
+(set: $dishesAway to true)
+(set: $checkedMirror to true)
+&lt;img src=&quot;https://arianna-cuevas.github.io/mirror.png&quot; width=&quot;700&quot;&gt;
+
+As soon as you step into the bathroom, you are struck by the roughness of your appearance. You can hardly even recognize yourself in the mirror. You just had the most fun few days you&#39;ve had in a while, but the reality of your overwhelming personal and academic responsibilities has certainly taken a toll. 
+
+It&#39;s not gonna make you look prettier, but getting some of that endless work done could make you happier. Time to [[get to work!|hallway2]]</tw-passagedata><tw-passagedata pid="28" name="office" tags="" position="275,1500" size="100,100">[insert image]
+
+</tw-passagedata><tw-passagedata pid="29" name="hallway2" tags="" position="400,1500" size="100,100">[insert image]
+In the hallway between your bedroom and your roommate&#39;s, you see a couple of your friends hanging out in their room. You hear laughter [insert audio], and it sounds so joyful. You want to go say hi to your friends, but you know you should go to your room. 
+
+You have a 10-page paper to write, a statistics exam to study for, and a video to record for your communications class. Now is not the time for fun.
+
+But a little break before you get to work never hurt anybody.
+
+Should you:
+
+[[Hang out with your friends?|hanging out]]
+
+Or
+
+[[Start doing your work for the night|office]]</tw-passagedata><tw-passagedata pid="30" name="hanging out" tags="" position="625,1625" size="100,100">(set: $foundKey to true)
+(set: $livingRoomDusted to true)
+(set: $dishesClean to true)
+(set: $dishwasherRan to true)
+(set: $dishesAway to true)
+(set: $checkedMirror to true)
+(set: $foundPeace to true)
+
+[insert image]
+
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
