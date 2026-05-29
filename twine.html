@@ -9,18 +9,108 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play AriannaC_150.</tw-noscript></noscript></tw-story>
-<tw-storydata name="AriannaC_150" startnode="1" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="EF7759A1-B5F3-4492-8450-837598C1037F" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">//tw-passage{
-  width:1000px;
-  height: 700px;
-  padding: 50px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: blue;
-  background-color: black;
+<tw-storydata name="AriannaC_150" startnode="12" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="EF7759A1-B5F3-4492-8450-837598C1037F" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap');
+
+tw-story {
+  font-family: 'Cormorant Garamond';font-size: 25px;
+   
+  background-image: url("https://arianna-cuevas.github.io/blurtwinebkg.png" );
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+  
+    
+.todo {
+  position: fixed;
+    top: 20px;
+    right: 20px;
+
+    width: 180px;
+  	max-width: 80vw;
+
+    background: rgba(0,0,0,0.85);
+
+    color: white;
+
+    padding: 12px;
+
+    border: 1px solid gray;
+
+    font-size: 0.8em;
+
+    line-height: 1.4;
+
+    word-wrap: break-word;
+
+    z-index: 999;
+  
+ 	overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    overflow-y: auto;
+
+    max-height: 80vh;
+
+    box-sizing: border-box;
 }
 
+@keyframes flicker {
+    0%   { opacity: 1; }
+    50%  { opacity: 0.6; }
+    100% { opacity: 1; }
+}
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="start" tags="" position="600,275" size="100,100">Welcome!
+.flashbox {
+    border: 1px solid white;
+    padding: 12px;
+    width: 400px;
+    background-color: black;
+
+  
+    animation: flicker 1s infinite;
+}
+
+.audiobutton {
+    background-color: black;
+    color: white;
+
+    border: 2px solid #666;
+
+    padding: 10px 20px;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 0.8em;
+
+    cursor: pointer;
+}
+
+.audiobutton:hover {
+    border-color: white;
+    box-shadow: 0 0 10px white;
+}
+
+tw-link {
+    color: black;
+}
+
+.title {
+  font-family: 'Almendra SC', serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  margin-bottom: 10px;
+}
+  tw-sidebar {
+    display: none;</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="start" tags="" position="600,275" size="100,100">Welcome!
 
 [[Exquisite Corpse|one]]
 
@@ -44,8 +134,9 @@
 
 </tw-passagedata><tw-passagedata pid="8" name="Untitled Passage" tags="" position="775,525" size="100,100"></tw-passagedata><tw-passagedata pid="9" name="seven" tags="" position="475,1150" size="100,100">Things in my house!!
 
-&lt;img src=&quot;https://arianna-cuevas.github.io/AriannaBioLayout.png&quot; style=&quot;width:100%&quot;&gt;</tw-passagedata><tw-passagedata pid="10" name="6. I hope I don&#39;t wake up before then." tags="" position="600,1150" size="100,100"></tw-passagedata><tw-passagedata pid="11" name="object assignment" tags="" position="725,400" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/falltree.png&quot;&gt;</tw-passagedata><tw-passagedata pid="12" name="haunted house" tags="" position="400,375" size="100,100">
-A Home That Was Once Haunted
+&lt;img src=&quot;https://arianna-cuevas.github.io/AriannaBioLayout.png&quot; style=&quot;width:100%&quot;&gt;</tw-passagedata><tw-passagedata pid="10" name="6. I hope I don&#39;t wake up before then." tags="" position="600,1150" size="100,100"></tw-passagedata><tw-passagedata pid="11" name="object assignment" tags="" position="725,400" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/falltree.png&quot;&gt;</tw-passagedata><tw-passagedata pid="12" name="haunted house" tags="" position="400,375" size="100,100">&lt;div class=&quot;title&quot;&gt;
+&lt;b&gt;A Home That Was Once Haunted&lt;/b&gt;
+&lt;/div&gt;
 
 Welcome Home. 
 
@@ -56,32 +147,24 @@ You must find your way to your room, but not until everything in the house and i
 [[Begin your journey|entrance]] ... at your own risk. Good luck!
 
 &lt;img src=&quot;https://arianna-cuevas.github.io/hauntedkey.png&quot; width=&quot;700&quot;&gt;
-
-&lt;button onclick=&quot;new Audio (&#39;https://arianna-cuevas.github.io/tensionbuild.mp3&#39;).play()&quot;&gt;♱&lt;/button&gt;
-
-&lt;audio src=&quot;https://arianna-cuevas.github.io/tensionbuild.mp3&quot; autoplay&gt;
-</tw-passagedata><tw-passagedata pid="13" name="entrance" tags="" position="400,500" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/hauntedyard.jpg&quot; width=&quot;700&quot;&gt;
-The smell of decay and pinewood are pungent around these parts. You hate walking this eerie path in the woods by yourself, but alas, your parents could not enter these parts. You must trek through the haunted forest before you can make it home. But the longer you spend here, the closer you get to &quot;home,&quot; the worse your anxiety gets.
-
-Once you get close, you pause for a moment. You know what you will find in that house can&#39;t be good, you just have a feeling. But it&#39;s time to get to work.
-
-Now [[approach the house.|doorway]] Good luck!</tw-passagedata><tw-passagedata pid="14" name="doorway" tags="" position="400,625" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/haunteddoor.png&quot; width=&quot;700&quot;&gt;
+</tw-passagedata><tw-passagedata pid="13" name="doorway" tags="" position="400,625" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/haunteddoor.png&quot; width=&quot;700&quot;&gt;
 
 Thump-thump, thump-thump.
 
 The sound of your own heart beat is deafening as you approach the portal to the bleak reality of a junior in college. Your anxiety is running rampant, you are even having trouble remembering where your key is. The door is usually unlocked, though. 
 
-Moreover, as soon as you approached the door, you remembered everything you have to do [[before tomorrow|ToDoList]]. And the list is endless.
+Moreover, as soon as you approached the door, you remembered everything you have to do before tomorrow. And the list is endless.
 
 Let&#39;s start cutting that list down.
 
 [[Look for the key|key]]
 
-
-</tw-passagedata><tw-passagedata pid="15" name="living room" tags="" position="400,750" size="100,100">
+&lt;audio autoplay&gt;
+    &lt;source src=&quot;https://arianna-cuevas.github.io/heartbeat.wav&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="14" name="living room" tags="" position="400,750" size="100,100">(set: $foundKey to true)
+(display: &quot;ToDoList&quot;)
 You found the key and made it inside!! 
-(set: $foundKey to true)
-[[Now you can check one thing off of your to do list!|ToDoList]]
+Now you can check one thing off of your to do list!
 
 It&#39;s pretty dark in here. You figured it would be scary in here, but not this empty. You are still afraid and can hear the thump-thump of your heartbeat growing with each passing second you spend in the dark. 
 
@@ -89,7 +172,11 @@ It&#39;s pretty dark in here. You figured it would be scary in here, but not thi
 
 Or 
 
-&lt;s&gt;Leave the house&lt;/s&gt;</tw-passagedata><tw-passagedata pid="16" name="foyer monster" tags="" position="400,875" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/livingroom.png&quot; width=&quot;700&quot;&gt;
+&lt;s&gt;Leave the house&lt;/s&gt;
+
+&lt;audio autoplay&gt;
+    &lt;source src=&quot;https://arianna-cuevas.github.io/checksound.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="15" name="foyer monster" tags="" position="400,875" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/livingroom.png&quot; width=&quot;700&quot;&gt;
 
 Oh no! It&#39;s one of your roommates in the filthy living room. You could have sworn that living room was clean before you left. Your roommate is busy on the couch rotting, no way they will clean the living room. This is another opportunity to start doing something productive for the house. But then again, you do have a lot of homework and studying to get to...
 
@@ -99,11 +186,15 @@ Should you:
 
 Or
 
-[[Keep going into the kitchen|kitchen]]</tw-passagedata><tw-passagedata pid="17" name="kitchen" tags="" position="275,875" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/kitchen.png&quot; width=&quot;700&quot;&gt;
+[[Keep going into the kitchen|kitchen]]
+
+&lt;audio autoplay&gt;
+    &lt;source src=&quot;https://arianna-cuevas.github.io/screaming.wav&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="16" name="kitchen" tags="" position="275,875" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/kitchen.png&quot; width=&quot;700&quot;&gt;
 
 Oh no! This kitchen is worse than I thought... this is going to take forever to get cleaned. How much of these dishes are mine, you wonder cautiously. You try to recall if you washed those dishes from the last few days before you left, but you were in such a hurry. It&#39;s impossible to remember. 
 
-Then you hear a  &lt;button onclick=&quot;new Audio (&#39;https://arianna-cuevas.github.io/creakyfloor.wav&#39;).play()&quot;&gt;creak&lt;/button&gt; behind you. Oh, no. Could it be one of your roommates?
+Then you hear a  &lt;button  class=&quot;audiobutton&quot; onclick=&quot;new Audio (&#39;https://arianna-cuevas.github.io/creakyfloor.wav&#39;).play()&quot;&gt;creak&lt;/button&gt; behind you. Oh, no. Could it be one of your roommates?
 
 Your roommate is not happy with you. You left some dishes in the sink, and even though the dish pileup isn&#39;t all yours, it&#39;s imperative that you clean your dishes now and put the rest in the dishwasher so that your roommate calms down. 
 
@@ -112,7 +203,10 @@ Should you [[clean the kitchen?|clean kitchen]]
 Or
 
 Move on to the [[hallway,|hallway]] you have work to do.
-</tw-passagedata><tw-passagedata pid="18" name="key" tags="" position="275,625" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/porch.png&quot; width=&quot;700&quot;&gt;
+
+&lt;audio autoplay&gt;
+    &lt;source src=&quot;https://arianna-cuevas.github.io/screaming.wav&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="17" name="key" tags="" position="275,625" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/porch.png&quot; width=&quot;700&quot;&gt;
 You decide to save yourself some embarrassment by trying to find a key, just in case the door is open and everyone is home. There should be a spare key next to the porch chair, but it could also be under the doormat.
 
 Should you look:
@@ -121,16 +215,20 @@ Should you look:
 
 or
 
-[[next to the chair|chair]]</tw-passagedata><tw-passagedata pid="19" name="doormat" tags="" position="275,750" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/doormat.png&quot; width=&quot;700&quot;&gt;
+[[next to the chair|chair]]</tw-passagedata><tw-passagedata pid="18" name="doormat" tags="" position="275,750" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/doormat.png&quot; width=&quot;700&quot;&gt;
 
 [[Look under the doormat|living room]] to see if the key is there!
 
-</tw-passagedata><tw-passagedata pid="20" name="chair" tags="" position="150,750" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/rockingchair.png&quot; width=&quot;700&quot;&gt;
+</tw-passagedata><tw-passagedata pid="19" name="chair" tags="" position="150,750" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/rockingchair.png&quot; width=&quot;700&quot;&gt;
 
-[[Look next to the chair|no key]] to see if it&#39;s there!</tw-passagedata><tw-passagedata pid="21" name="no key" tags="" position="150,875" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/xmark.png&quot; width=&quot;700&quot;&gt;
+[[Look next to the chair|no key]] to see if it&#39;s there!</tw-passagedata><tw-passagedata pid="20" name="no key" tags="" position="150,875" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/xmark.png&quot; width=&quot;700&quot;&gt;
 No key!!
 
-[[Look under the doormat|doormat]]</tw-passagedata><tw-passagedata pid="22" name="StoryInit" tags="" position="250,400" size="100,100">(set: $foundKey to false)
+[[Look under the doormat|doormat]]
+
+&lt;audio autoplay&gt;
+    &lt;source src=&quot;https://arianna-cuevas.github.io/beepsound.wav&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="21" name="StoryInit" tags="" position="275,350" size="100,100">(set: $foundKey to false)
 (set: $livingRoomDusted to false)
 (set: $dishesClean to false)
 (set: $dishwasherRan to false)
@@ -146,7 +244,8 @@ No key!!
 (set: $waterBillPaid to false)
 (set: $toiletPaperPurchased to false)
 (set: $roommatesAvoided to false)
-(set: $foundPeace to false)</tw-passagedata><tw-passagedata pid="23" name="ToDoList" tags="" position="250,500" size="100,100">|todo&gt;[TO DO LIST]
+(set: $foundPeace to false)</tw-passagedata><tw-passagedata pid="22" name="ToDoList" tags="" position="250,500" size="100,100">&lt;div class=&quot;todo&quot;&gt;
+|todo&gt;[TO DO LIST]
 
 (if: $foundKey is true)[✓ Find the missing key]
 (else:)[☐ Find the missing key]
@@ -177,13 +276,9 @@ No key!!
 (if: $foundPeace is true)[✓ Find little bit of peace for the night (before the horrors return tomorrow before class)]
 (else:)[☐ Find little bit of peace for the night (before the horrors return tomorrow before class)]
 
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="clean living room" tags="" position="275,1125" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/cleanlivingroom.png&quot; width=&quot;700&quot;&gt;
 
-</tw-passagedata><tw-passagedata pid="24" name="clean living room" tags="" position="275,1125" size="100,100">(set: $foundKey to true)
-(set: $livingRoomDusted to true)
-
-[insert image]
-
-You completed another task on your [[to-do list!|ToDoList]] And now the living room is spotless, congratulations! 
+You completed another task on your to-do list! And now the living room is spotless, congratulations! 
 
 [[Move on to the kitchen|kitchen]]
 
@@ -191,41 +286,70 @@ Or
 
 [[Go to the hallway|hallway]]
 
-</tw-passagedata><tw-passagedata pid="25" name="hallway" tags="" position="275,1250" size="100,100">[insert image]
+(set: $foundKey to true)
+(set: $livingRoomDusted to true)
+(display: &quot;ToDoList&quot;)
 
-You think about what to check off of your list first. You know you have a pile of homework to do before your finals start next week, but you would rather unpack your bags from vacation. It requires way less brain power. There&#39;s also the matter of feeding yourself and taking care of your body first. 
+&lt;audio autoplay&gt;
+    &lt;source src=&quot;https://arianna-cuevas.github.io/checksound.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="24" name="hallway" tags="" position="275,1250" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/hallway1.jpg&quot; width=&quot;700&quot;&gt;
+
+You think about what to check off of your list first. You know you have a pile of homework to do before your finals start next week, but you would rather unpack your bags from vacation. It requires considerably less brain power. There&#39;s also the matter of feeding yourself and taking care of your body. 
 
 But first, you need to use the bathroom. You had a long traveling day and haven&#39;t been to the bathroom since the rest stop your family went to over 4 hours ago. So you head upstairs to the [[bathroom.|bathroom]]
 
+&lt;audio autoplay&gt;
+    &lt;source src=&quot;https://arianna-cuevas.github.io/tensionbuild.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="25" name="clean kitchen" tags="" position="150,1175" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/cleankitchen.png&quot; width=&quot;700&quot;&gt;
 
-</tw-passagedata><tw-passagedata pid="26" name="clean kitchen" tags="" position="150,1175" size="100,100">(set: $foundKey to true)
-(set: $livingRoomDusted to true)
+The kitchen is clean and your roommate is happy again! And now you can check a few things off of your to-do list!
+
+Okay, now it&#39;s time to go upstairs and get settled for the night, so you make your way [[through the hallway.|hallway]]
+
+(set: $foundKey to true)
 (set: $dishesClean to true)
 (set: $dishwasherRan to true)
 (set: $dishesAway to true)
-[insert image]
+(display: &quot;ToDoList&quot;)
 
-The kitchen is clean and your roommate is happy again! And now you can check a few things off of your [[to-do list!|ToDoList]]
+&lt;audio autoplay&gt;
+    &lt;source src=&quot;https://arianna-cuevas.github.io/checksound.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="26" name="bathroom" tags="" position="275,1375" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/mirror.jpg&quot; width=&quot;700&quot;&gt;
 
-Okay, now it&#39;s time to go upstairs and get settled for the night, so you make your way [[through the hallway.|hallway]]
-</tw-passagedata><tw-passagedata pid="27" name="bathroom" tags="" position="275,1375" size="100,100">(set: $foundKey to true)
+As soon as you step into the bathroom, you are struck by your own ragged appearance. You can hardly even recognize yourself in the mirror. You just had the most fun few days you&#39;ve had in a while, but the reality of your overwhelming personal and academic responsibilities has certainly taken a toll. 
+
+It&#39;s not gonna make you look prettier, but getting some of that endless work done could make you happier. Time to [[get to work!|hallway2]]
+
+(set: $foundKey to true)
 (set: $livingRoomDusted to true)
 (set: $dishesClean to true)
 (set: $dishwasherRan to true)
 (set: $dishesAway to true)
 (set: $checkedMirror to true)
-&lt;img src=&quot;https://arianna-cuevas.github.io/mirror.png&quot; width=&quot;700&quot;&gt;
+(display: &quot;ToDoList&quot;)
 
-As soon as you step into the bathroom, you are struck by the roughness of your appearance. You can hardly even recognize yourself in the mirror. You just had the most fun few days you&#39;ve had in a while, but the reality of your overwhelming personal and academic responsibilities has certainly taken a toll. 
+&lt;audio autoplay&gt;
+    &lt;source src=&quot;https://arianna-cuevas.github.io/checksound.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="27" name="office" tags="" position="275,1500" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/office.png&quot; width=&quot;700&quot;&gt;
 
-It&#39;s not gonna make you look prettier, but getting some of that endless work done could make you happier. Time to [[get to work!|hallway2]]</tw-passagedata><tw-passagedata pid="28" name="office" tags="" position="275,1500" size="100,100">[insert image]
+There&#39;s no going back now. It&#39;s time to officially lock in and knock out some of that work you need to get done before your last day of classes. According to your Canvas and Google Calendar, you have one 10-page paper to start on, a video essay detailing an important lesson you have learned in college so far, and a final exam in your statistics class to start studying for. 
 
-</tw-passagedata><tw-passagedata pid="29" name="hallway2" tags="" position="400,1500" size="100,100">[insert image]
-In the hallway between your bedroom and your roommate&#39;s, you see a couple of your friends hanging out in their room. You hear laughter [insert audio], and it sounds so joyful. You want to go say hi to your friends, but you know you should go to your room. 
+Which do you want to start on?
+
+* [[10-page paper you haven&#39;t started on.|paper]]
+* [[Video essay|video essay]]
+* [[Study for statistics exam|study]]
+
+&lt;audio autoplay&gt;
+    &lt;source src=&quot;https://arianna-cuevas.github.io/computerbuzzing.wav&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+</tw-passagedata><tw-passagedata pid="28" name="hallway2" tags="" position="400,1500" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/hallway2.jpg&quot; width=&quot;700&quot;&gt;
+
+In the hallway between your bedroom and your roommate&#39;s, you see a couple of your friends hanging out in their room. You hear laughter [insert audio], and can practically feel the joy of friendship emanating from their room. You want to go say hi to your friends, but you know you should start getting to work. 
 
 You have a 10-page paper to write, a statistics exam to study for, and a video to record for your communications class. Now is not the time for fun.
 
-But a little break before you get to work never hurt anybody.
+But a little break before work never hurt anybody.
 
 Should you:
 
@@ -233,16 +357,122 @@ Should you:
 
 Or
 
-[[Start doing your work for the night|office]]</tw-passagedata><tw-passagedata pid="30" name="hanging out" tags="" position="625,1625" size="100,100">(set: $foundKey to true)
+[[Start doing your work for the night.|office]]
+&lt;audio autoplay&gt;
+    &lt;source src=&quot;https://arianna-cuevas.github.io/tensionbuild.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="29" name="hanging out" tags="" position="625,1625" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/hangingout.png&quot; width=&quot;700&quot;&gt;
+
+Ehh, you don&#39;t need to do that work tonight. You just got back from vacation, it&#39;s okay! Sometimes, as an anxious junior in college, the best way to overcome the horrific stressors that come your way, is to take a step back and enjoy the present moment. You won&#39;t remember that paper you wrote, or what grade you got on the hardest exam you took. But you will remember the laughs you had with friends.
+
+The horrors of the last few years of adolescence persist but that is a problem for another day.
+
+&lt;div class=&quot;flashbox&quot;
+style=&quot;
+border: 4px solid black;
+padding: 5px;
+line-height: 1.0;
+&quot;&gt;
+
+&lt;b&gt;To-do list for tomorrow loading...&lt;/b&gt;
+
+&lt;/div&gt;
+
+[[&lt;b&gt;New Game&lt;/b&gt;|haunted house]]
+
+(set: $foundKey to true)
 (set: $livingRoomDusted to true)
 (set: $dishesClean to true)
 (set: $dishwasherRan to true)
 (set: $dishesAway to true)
 (set: $checkedMirror to true)
 (set: $foundPeace to true)
+(display: &quot;ToDoList&quot;)
 
-[insert image]
+&lt;audio autoplay&gt;
+    &lt;source src=&quot;https://arianna-cuevas.github.io/hooray.wav&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+</tw-passagedata><tw-passagedata pid="30" name="entrance" tags="" position="400,500" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/hauntedyard.jpg&quot; width=&quot;700&quot;&gt;
 
+
+The smell of decay and pinewood are pungent around these parts. You hate walking this eerie path in the woods by yourself, but alas, your parents could not enter these parts. You must trek through the haunted forest before you can make it home. But the longer you spend here, the closer you get to &quot;home,&quot; the worse your anxiety gets.
+Once you get close, you pause for a moment. You know what you will find in that house can&#39;t be good, you just have a feeling. But it&#39;s time to get to work.
+
+Now [[approach the house.|doorway]] Good luck!!
+
+&lt;audio autoplay&gt;
+    &lt;source src=&quot;https://arianna-cuevas.github.io/tensionbuild.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="31" name="paper" tags="" position="275,1625" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/studybrain.png&quot; width=&quot;700&quot;&gt;
+
+You cannot focus on any academic work right now. You feel like you need a brain break already. The pressure is just too high. You hear your friends laughing in the next room over, but you know you still have work to do. What should you do instead...
+
+[[Fall down a rabbit hole applying for internships this summer.|internship applications]]
+
+[[Look at your finances|finances]]
+
+[[Check email|email]]
+
+[[Forget your work for the night, go hang out with your friends.|hanging out]]
+
+&lt;audio autoplay&gt;
+    &lt;source src=&quot;https://arianna-cuevas.github.io/distantlaughter.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+</tw-passagedata><tw-passagedata pid="32" name="video essay" tags="" position="400,1625" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/studybrain.png&quot; width=&quot;700&quot;&gt;
+
+You cannot focus on any academic work right now. You feel like you need a brain break already. The pressure is just too high. You hear your friends laughing in the next room over, but you know you still have work to do. What should you do instead...
+
+[[Fall down a rabbit hole applying for internships this summer.|internship applications]]
+
+[[Look at your finances|finances]]
+
+[[Check email|email]]
+
+[[Forget your work for the night, go hang out with your friends.|hanging out]]
+
+&lt;audio autoplay&gt;
+    &lt;source src=&quot;https://arianna-cuevas.github.io/distantlaughter.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+</tw-passagedata><tw-passagedata pid="33" name="study" tags="" position="150,1625" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/studybrain.png&quot; width=&quot;700&quot;&gt;
+
+You cannot focus on any academic work right now. You feel like you need a brain break already. The pressure is just too high. You hear your friends laughing in the next room over, but you know you still have work to do. What should you do instead...
+
+[[Fall down a rabbit hole applying for internships this summer.|internship applications]]
+
+[[Look at your finances|finances]]
+
+[[Check email|email]]
+
+[[Forget your work for the night, go hang out with your friends.|hanging out]]
+
+&lt;audio autoplay&gt;
+    &lt;source src=&quot;https://arianna-cuevas.github.io/distantlaughter.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+</tw-passagedata><tw-passagedata pid="34" name="internship applications" tags="" position="150,1750" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/stressbrain.png&quot; width=&quot;700&quot;&gt;
+
+It&#39;s all the same. Nothing you do is helping you at all, you keep falling down useless rabbit holes, some related to your future or career aspirations, others unrelated to anything at all. You cannot get the thrilling sound of your best friends&#39; laughter out of your head and you know you would be so refreshed if you just went to them. 
+
+[[Go hang out!|hanging out]]
+
+&lt;audio autoplay&gt;
+    &lt;source src=&quot;https://arianna-cuevas.github.io/distantlaughter.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+</tw-passagedata><tw-passagedata pid="35" name="finances" tags="" position="275,1750" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/stressbrain.png&quot; width=&quot;700&quot;&gt;
+
+It&#39;s all the same. Nothing you do is helping you at all, you keep falling down useless rabbit holes, some related to your future or career aspirations, others unrelated to anything at all. You cannot get the thrilling sound of your best friends&#39; laughter out of your head and you know it would be so rejuvenating to spend time with friends. 
+
+[[Go hang out!|hanging out]]
+
+&lt;audio autoplay&gt;
+    &lt;source src=&quot;https://arianna-cuevas.github.io/distantlaughter.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+</tw-passagedata><tw-passagedata pid="36" name="email" tags="" position="25,1750" size="100,100">&lt;img src=&quot;https://arianna-cuevas.github.io/stressbrain.png&quot; width=&quot;700&quot;&gt;
+
+It&#39;s all the same. Nothing you do is helping you at all, you keep falling down useless rabbit holes, some related to your future or career aspirations, others unrelated to anything at all. You cannot get the thrilling sound of your best friends&#39; laughter out of your head and you know you would be so refreshed if you just went to them. 
+
+[[Go hang out!|hanging out]]
+
+&lt;audio autoplay&gt;
+    &lt;source src=&quot;https://arianna-cuevas.github.io/distantlaughter.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
 </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
